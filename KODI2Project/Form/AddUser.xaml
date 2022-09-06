@@ -1,0 +1,44 @@
+﻿<Window x:Class="KODI2Project.Form.AddUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KODI2Project.Form"
+        mc:Ignorable="d"
+        Title="AddUser" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center">
+            <StackPanel>
+                <Label>
+                    Укажите имя пользователя
+                </Label>
+                <TextBox Name="tbName"/>
+            </StackPanel>
+            <StackPanel>
+                <Label>
+                    Укажите возраст пользователя
+                </Label>
+                <TextBox Name="tbAge"/>
+            </StackPanel>
+            <StackPanel>
+                <Label>
+                    Укажите гендер пользователя
+                </Label>
+                <ComboBox Name="cbGender"/>
+            </StackPanel>
+            <Button x:Name="btnAddUser"
+                    Click="btnAddUser_Click">
+                Добавить пользователя в БД
+            </Button>
+            <Button x:Name="btnBackToTheStartWindow"
+                    Click="btnBackToTheStartWindow_Click">
+                вернуться в стартовое окно
+            </Button>
+            <Button x:Name="btnMadeManyUsers"
+                    Click="btnMadeManyUsers_Click"
+                    ToolTip="1000 готово и 100000 уже на подхоже">
+                Создать случайных пользователей
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
